@@ -58,7 +58,7 @@ jobs:
           --build-arg GITHUB_REF="$GITHUB_REF" \
           .
 
-    # Push the Docker image to Google Container Registry
+    # Push the Docker image to Google Container Registry.
     - name: Publish
       run: |-
         docker push "us-docker.pkg.dev/cit262team/luke-api/api-tests:latest"
